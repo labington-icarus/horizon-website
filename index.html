@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Horizon Property Maintenance — Fredericksburg, VA</title>
-  <meta name="description" content="Horizon Property Maintenance — landscaping, pressure washing, and detailing in Fredericksburg, VA. Call 540-429-6983 for a free quote.">
+  <title>Horizon Property Maintenance — Stafford, VA</title>
+  <meta name="description" content="Horizon Property Maintenance — landscaping, pressure washing, and detailing in Stafford, VA. Call 540-429-6983 for a free quote.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -42,25 +42,9 @@
     img { display: block; max-width: 100%; height: auto; }
     .container { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
 
-    /* Top call bar */
-    .top-bar {
-      position: fixed; top: 0; left: 0; right: 0; z-index: 110;
-      background: var(--gold);
-      color: var(--green-deep);
-      text-align: center;
-      padding: 8px 16px;
-      font-size: 14px;
-      font-weight: 700;
-    }
-    .top-bar a {
-      color: var(--green-deep);
-      text-decoration: underline;
-      margin-left: 6px;
-    }
-
     /* Nav */
     .nav {
-      position: fixed; top: 34px; left: 0; right: 0; z-index: 100;
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
       background: rgba(8, 22, 8, .96);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(220, 160, 80, .12);
@@ -102,7 +86,7 @@
       position: relative; min-height: 100vh;
       display: flex; align-items: center;
       overflow: hidden;
-      padding-top: 120px;
+      padding-top: 100px;
     }
     .hero-bg {
       position: absolute; inset: 0;
@@ -207,6 +191,15 @@
     .service-features li::before {
       content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--gold); flex-shrink: 0;
     }
+    .service-card-img.solid {
+      background: linear-gradient(135deg, var(--green-deep), var(--green-mid));
+      display: flex; align-items: flex-end;
+    }
+    .service-card-img.solid .label {
+      position: static;
+      background: transparent;
+      padding-top: 160px;
+    }
 
     /* How it works */
     .process-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
@@ -289,14 +282,12 @@
     .fade-up.visible { opacity: 1; transform: translateY(0); }
 
     @media (max-width: 900px) {
-      .top-bar { font-size: 12px; padding: 6px 12px; }
-      .nav { top: 30px; }
       .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: rgba(8,22,8,.98); flex-direction: column; padding: 24px; gap: 18px; }
       .nav-links.open { display: flex; }
       .nav-burger { display: block; }
       .nav-logo img { width: 52px; height: 52px; }
       .nav-logo-text .brand { font-size: 20px; }
-      .hero { padding-top: 100px; }
+      .hero { padding-top: 90px; }
       .hero-logo { width: 130px; height: 130px; }
       .services-grid { grid-template-columns: 1fr; }
       .also-grid { grid-template-columns: 1fr; }
@@ -317,11 +308,6 @@
   </style>
 </head>
 <body>
-
-<!-- TOP CALL BAR -->
-<div class="top-bar">
-  📞 Free quote today — <a href="tel:5404296983">540-429-6983</a>
-</div>
 
 <!-- NAV -->
 <nav class="nav">
@@ -352,22 +338,22 @@
     <img src="images/logo.jpg" alt="Horizon Property Maintenance" class="hero-logo">
     <div class="hero-badge">
       <span class="dot"></span>
-      Serving Fredericksburg, VA
+      Stafford, VA
     </div>
     <h1>Your Property, <span class="gold">Handled Right</span></h1>
-    <p class="sub">Landscaping, pressure washing, and mobile detailing — done by a local guy who shows up on time and gets it clean. One call. No hassle.</p>
+    <p class="sub">Landscaping, pressure washing, and mobile detailing. If it's outside and needs cleaning or fixing up, I can take care of it. Give me a call and I'll come take a look.</p>
     <div class="hero-ctas">
       <a href="tel:5404296983" class="btn-primary">Call 540-429-6983</a>
-      <a href="#services" class="btn-secondary">See Services</a>
+      <a href="#work" class="btn-secondary">See Real Jobs</a>
     </div>
     <div class="trust-strip">
       <div class="trust-item">
         <div class="icon">📍</div>
-        <div class="text"><strong>Local to Fredericksburg</strong><span>VA service area</span></div>
+        <div class="text"><strong>Based in Stafford</strong><span>Local, not a big crew</span></div>
       </div>
       <div class="trust-item">
         <div class="icon">⚡</div>
-        <div class="text"><strong>Fast Response</strong><span>Same-week scheduling</span></div>
+        <div class="text"><strong>Quick Turnaround</strong><span>Usually same week</span></div>
       </div>
       <div class="trust-item">
         <div class="icon">🤝</div>
@@ -382,8 +368,8 @@
   <div class="container">
     <div class="section-header fade-up">
       <span class="section-tag">Services</span>
-      <h2>Three Ways We Help</h2>
-      <p>One crew, three skill sets. Real work, real results.</p>
+      <h2>What I Do</h2>
+      <p>Three services, one phone number.</p>
     </div>
     <div class="services-grid">
       <!-- Landscaping -->
@@ -396,7 +382,7 @@
           </div>
         </div>
         <div class="service-card-body">
-          <p>Mulching, bed cleanups, bush trimming, mowing, and seasonal refreshes that make your yard look kept.</p>
+          <p>Mulch, bed cleanups, bush trimming, mowing, and seasonal yard work that makes your place look kept.</p>
           <ul class="service-features">
             <li>Mulch & bed cleanup</li>
             <li>Bush & hedge trimming</li>
@@ -408,15 +394,14 @@
       </div>
       <!-- Pressure Washing -->
       <div class="service-card fade-up">
-        <div class="service-card-img">
-          <img src="images/work/new-img_818c6bd9e6d7.jpg" alt="Pressure washing by Horizon">
+        <div class="service-card-img solid">
           <div class="label">
             <div class="num">02</div>
             <h3>Pressure Washing</h3>
           </div>
         </div>
         <div class="service-card-body">
-          <p>Strip away dirt, mildew, and stains from driveways, patios, siding, and decks.</p>
+          <p>Wash away dirt, mildew, and stains from driveways, patios, siding, and decks. Makes old concrete look new again.</p>
           <ul class="service-features">
             <li>Driveways & sidewalks</li>
             <li>Patios & decks</li>
@@ -436,7 +421,7 @@
           </div>
         </div>
         <div class="service-card-body">
-          <p>Interior deep cleans, exterior hand washes, and full details — we come to your home or office.</p>
+          <p>Interior deep cleans, exterior hand washes, and full details. I bring everything to your driveway or parking spot.</p>
           <ul class="service-features">
             <li>Interior deep clean</li>
             <li>Exterior hand wash & wax</li>
@@ -450,45 +435,13 @@
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
-<section class="section section-dark" id="process">
-  <div class="container">
-    <div class="section-header fade-up">
-      <span class="section-tag">How It Works</span>
-      <h2>Simple. Get It Done.</h2>
-    </div>
-    <div class="process-grid fade-up">
-      <div class="process-step">
-        <div class="step-num">1</div>
-        <h4>Call or Text</h4>
-        <p>Reach out at 540-429-6983. Tell us what you need.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-num">2</div>
-        <h4>Get a Quote</h4>
-        <p>Fair, upfront price based on the job. No surprises.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-num">3</div>
-        <h4>We Show Up</h4>
-        <p>On time, with the right tools, ready to work.</p>
-      </div>
-      <div class="process-step">
-        <div class="step-num">4</div>
-        <h4>You Enjoy It</h4>
-        <p>Clean car, clean driveway, clean yard — done.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- GALLERY -->
 <section class="section section-darker" id="work">
   <div class="container">
     <div class="section-header fade-up">
       <span class="section-tag">Our Work</span>
-      <h2>Real Jobs in Fredericksburg</h2>
-      <p>Actual work we’ve done — not stock photos.</p>
+      <h2>Real Jobs in Stafford</h2>
+      <p>These are actual jobs I've done — not stock photos.</p>
     </div>
     <div class="gallery-grid fade-up">
       <div class="gallery-item tall">
@@ -543,13 +496,45 @@
   </div>
 </section>
 
+<!-- HOW IT WORKS -->
+<section class="section section-dark" id="process">
+  <div class="container">
+    <div class="section-header fade-up">
+      <span class="section-tag">How It Works</span>
+      <h2>Four Steps From Call to Clean</h2>
+    </div>
+    <div class="process-grid fade-up">
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <h4>Call or Text</h4>
+        <p>Tell me what you need at 540-429-6983.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <h4>Get a Quote</h4>
+        <p>I'll give you an upfront price based on the job. No surprise charges.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <h4>I Show Up</h4>
+        <p>On time with the tools I need, ready to get to work.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">4</div>
+        <h4>Done Right</h4>
+        <p>Clean yard, clean driveway, clean car — however I can help.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CTA -->
 <section class="cta-section">
   <div class="cta-bg"></div>
   <div class="cta-overlay"></div>
   <div class="container cta-content">
-    <h2>Ready To Get Your Property Looking Right?</h2>
-    <p>Call or text today. We’ll give you a fair quote and get you on the schedule.</p>
+    <h2>Need Something Cleaned Up Outside?</h2>
+    <p>Call or text and I'll come take a look. Free quote, fair price.</p>
     <a href="tel:5404296983" class="btn-primary">Call 540-429-6983</a>
   </div>
 </section>
@@ -560,13 +545,13 @@
     <div class="section-header fade-up">
       <span class="section-tag">Get In Touch</span>
       <h2>Contact Horizon</h2>
-      <p>Call, text, or email — available 7 days a week.</p>
+      <p>Call, text, or email. I usually respond the same day.</p>
     </div>
     <div class="contact-grid fade-up">
       <div class="contact-card">
         <div class="ci-label">Phone / Text</div>
         <div class="ci-value"><a href="tel:5404296983">540-429-6983</a></div>
-        <div class="ci-sub">Fastest way to reach us</div>
+        <div class="ci-sub">Best way to reach me</div>
       </div>
       <div class="contact-card">
         <div class="ci-label">Email</div>
@@ -575,8 +560,8 @@
       </div>
       <div class="contact-card">
         <div class="ci-label">Service Area</div>
-        <div class="ci-value">Fredericksburg, VA</div>
-        <div class="ci-sub">Mobile — We come to you</div>
+        <div class="ci-value">Stafford, VA</div>
+        <div class="ci-sub">Mobile — I come to you</div>
       </div>
     </div>
   </div>
@@ -594,7 +579,7 @@
             <div class="tag">Property Maintenance</div>
           </div>
         </div>
-        <p>Landscaping, pressure washing, and mobile auto detailing for Fredericksburg, VA. Local, reliable, and ready to work.</p>
+        <p>Landscaping, pressure washing, and mobile auto detailing for Stafford, VA. Local, reliable, and ready to work.</p>
       </div>
       <div>
         <h4>Services</h4>
@@ -617,7 +602,7 @@
         <ul>
           <li><a href="tel:5404296983">540-429-6983</a></li>
           <li><a href="mailto:Harrisjasonni@gmail.com">Harrisjasonni@gmail.com</a></li>
-          <li><a href="#">Fredericksburg, VA</a></li>
+          <li><a href="#">Stafford, VA</a></li>
         </ul>
       </div>
     </div>
